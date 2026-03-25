@@ -21,3 +21,4 @@ CREATE TABLE enrollments (
     FOREIGN KEY (course_id) REFERENCES courses(course_id),
     UNIQUE KEY uk_student_course (student_id, course_id) COMMENT '防止重复选课'
 ) COMMENT='选课成绩表';
+###
